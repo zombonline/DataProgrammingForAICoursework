@@ -1,0 +1,30 @@
+{
+    "pattern_to_intent": [
+        {"pattern": "hello|hi|howdy|what's up|hey|hiya|sup|hey there|good morning|good afternoon|good evening|how are you|what's good|what's happening|how's it going|salutations|hiya pal|morning|evening|hi there",
+         "intent": "greeting"},
+        {"pattern": "yes|mhm|yeah|yep|sure|ok|okay|alright|affirmative|correct|right|indeed",
+         "intent": "positive"},
+        {"pattern": "no|nope|nah|negative|incorrect|wrong|not true|not correct",
+         "intent": "negative"},
+        {"pattern": "goodbye|bye|farewell|see you later|see ya|later|talk to you later|adios|ciao|so long|peace out|take care|bye bye|goodnight",
+         "intent": "goodbye"},
+        {"pattern": "my name is|I am|I'm|call me",
+         "intent": "user_name",
+         "function": "parse_name"},
+        {"pattern": "i like|I love|I enjoy|I'm a fan of|I'm a big fan of|I'm a huge fan",
+         "intent": "likes",
+         "function": "remember_likes"}
+    ],
+    "intent_to_response": {
+        "greeting": ["Hello!", "Hi!", "Hey!"],
+        "positive": ["Great!", "Awesome!", "Fantastic!"],
+        "negative": ["I'm sorry to hear that.", "That's too bad.", "I hope things get better."],
+        "goodbye": ["Goodbye!", "Bye!", "See you later!"],
+        "user_name": ["Nice to meet you!", "Hello, {user_name}!", "Hi, {user_name}!"],
+        "likes": ["I'll remember that you like {likes}.", "I've noted that you're a fan of {likes}.", "I'll keep that in mind."]
+    },
+    "intent_to_action": {
+        "user_name": "remember_name",
+        "likes": "remember_likes"
+    }
+}
