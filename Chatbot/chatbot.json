@@ -14,8 +14,10 @@
          "intent": "recommend"},
         {"pattern": "i own|i have|i use|i play on|i'm on|game on|console",
          "intent": "platform"},
-        {"pattern": "i'm into|i'm in to|i prefer|i like|my favourite|genre|genres|type|types|category|categories",
-         "intent": "genre"}
+        {"pattern": "i'm into|i'm in to|i am in to|i am into|i prefer|i like|my favourite|genre|genres|type|types|category|categories",
+         "intent": "genre"},
+        {"pattern": "vibes|themes|elements|features|keywords|vibe|theme|element|feature|keyword|mechanics|mechanic|gameplay|game play|game mechanics|game mechanic|style",
+         "intent": "keywords"}
     ],
     "intent_to_response": {
         "greeting": ["Hello!", "Hi!", "Hey!"],
@@ -25,13 +27,15 @@
         "user_name": ["Nice to meet you!", "Hello, {user_name}!", "Hi, {user_name}!"],
         "recommend": ["What do you think of {name}?", "How about {name}?", "I recommend {name}. What do you think?"],
         "platform": ["Awesome, I'll keep that in mind!", "Noted!", "{platform} is a great choice!", "I'll remember that!", "Thanks for letting me know!", "I love {platform} too!"],
-        "genre": ["Great choice!", "I'll keep that in mind!", "Noted!", "I love {genre} too!", "Thanks for letting me know!"]
+        "genre": ["Great choice!", "I'll keep that in mind!", "Noted!", "I love {genre} too!", "Thanks for letting me know!"],
+        "keywords": ["So you're looking for games with the following vibes? {keywords}", "I see you're interested in games with the following themes: {keywords}", "You're into games with the following elements: {keywords}", "You're looking for games that have the following features: {keywords}", "You're interested in games that include the following: {keywords}", "You're into games that have the following: {keywords}"]
     },
     "intent_to_action": {
         "user_name": "remember_name",
         "recommend": "recommend_game",
         "platform": "remember_platform",
-        "genre": "remember_genre"
+        "genre": "remember_genre",
+        "keywords": "remember_keywords"
     },
     "pattern_to_platform": [
         {"pattern": "switch|nintendo switch lite|nintendo switch|nintendo switch pro|nintendo switch|joycon",
@@ -40,9 +44,10 @@
         "id": 7, "platform": "PlayStation"}
     ],
     "pattern_to_genre": [
-        {"pattern":"jumping|jump|run|running|platform|platformer|platforming|platformers|platform game|platform games|jumping game|jumping games",
+        {"pattern":"jumping|jump|run|running|platformer|platform|platforming|platformers|platform game|platform games|jumping game|jumping games",
         "id": 8, "genre": "Platform"},
-         {"pattern":"racing|driving|drive|race|races|racing game|racing games",
+        {"pattern":"racing|driving|drive|race|races|racing game|racing games",
         "id": 10, "genre": "Racing"}
     ]
+
 }
