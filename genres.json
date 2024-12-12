@@ -1,0 +1,63 @@
+{
+    "genres": [
+        {"id": 2, "name": "Point-and-click"},
+        {"id": 4, "name": "Fighting"},
+        {"id": 5, "name": "Shooter"},
+        {"id": 7, "name": "Music"},
+        {"id": 8, "name": "Platform"},
+        {"id": 9, "name": "Puzzle"},
+        {"id": 10, "name": "Racing"}, 
+        {"id": 11, "name": "Real Time Strategy (RTS)"},
+        {"id": 12, "name": "Role-playing (RPG)"},
+        {"id": 13, "name": "Simulator"},
+        {"id": 14, "name": "Sport"},
+        {"id": 15, "name": "Strategy"}, 
+        {"id": 16, "name": "Turn-based strategy (TBS)"},
+        {"id": 24, "name": "Tactical"}, 
+        {"id": 25, "name": "Hack and slash/Beat 'em up"},
+        {"id": 26, "name": "Quiz/Trivia"},
+        {"id": 30, "name": "Pinball"},
+        {"id": 31, "name": "Adventure"},
+        {"id": 32, "name": "Indie"}, 
+        {"id": 33, "name": "Arcade"},
+        {"id": 34, "name": "Visual Novel"},
+        {"id": 35, "name": "Card & Board Game"},
+        {"id": 36, "name": "MOBA"}
+    ],
+    "platforms":
+    [
+        {"id": 34, "name": "Android"},
+        {"id": 13, "name": "DOS"},
+        {"id": 23, "name": "Dreamcast"},
+        {"id": 22, "name": "Game Boy"},
+        {"id": 33, "name": "Game Boy Advance"},
+        {"id": 20, "name": "Game Boy Color"},
+        {"id": 39, "name": "iOS"},
+        {"id": 3, "name": "Linux"},
+        {"id": 4, "name": "Nintendo 64"},
+        {"id": 37, "name": "Nintendo 3DS"},
+        {"pattern": "switch|nintendo switch lite|nintendo switch|nintendo switch pro|nintendo switch|joycon",
+            "id": 130, "name": "Nintendo Switch"},
+        {"id": 19, "name": "Super Nintendo Entertainment System"},
+        {"id": 8, "name": "PlayStation 2"},
+        {"pattern": "ps1|psx|playstation|ps|ps one|play station|play station 1|play station one",
+         "id": 7, "name": "PlayStation"},
+        {"id": 9, "name": "PlayStation 3"},
+        {"id": 48, "name": "PlayStation 4"},
+        {"id": 167, "name": "PlayStation 5"},
+        {"id": 6, "name": "PC (Microsoft Windows)"},
+        {"id": 12, "name": "Xbox 360"},
+        {"id": 11, "name": "Xbox"},
+        {"id": 49, "name": "Xbox One"},
+        {"id": 169, "name": "Xbox Series X|S"},
+        {"id": 5, "name": "Wii"},
+        {"id": 41, "name": "Wii U"}
+    ]
+}
+
+"pattern_to_platform": [
+        {"pattern": "switch|nintendo switch lite|nintendo switch|nintendo switch pro|nintendo switch|joycon",
+        "id": 130, "platform": "Nintendo Switch"},
+        {"pattern": "ps1|psx|playstation|ps|ps one|play station|play station 1|play station one",
+        "id": 7, "platform": "PlayStation"}
+    ]
